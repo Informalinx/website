@@ -1,0 +1,24 @@
+{
+    "type": "module",
+    "dependencies": {
+        "express": "^5.2.1",
+        "tailwindcss": "^4.3.1"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.3.1",
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.0.0",
+        "nodemon": "^3.1.14",
+        "typescript": "^6.0.3"
+    },
+    "scripts": {
+        "tailwind:watch": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./public/dist/css/main.css --watch",
+        "tailwind:compile": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./public/dist/css/main.css",
+        "ts:compile:client": "npx tsc --project tsconfig.client.json",
+        "ts:compile:server": "npx tsc --project tsconfig.server.json",
+        "ts:watch:client": "npx tsc --watch --project tsconfig.client.json",
+        "ts:watch:server": "npx tsc --watch --project tsconfig.server.json",
+        "build": "npm run ts:compile:client && npm run ts:compile:server && npm run tailwind:compile",
+        "dev": "nodemon ./dist/server.js"
+    }
+}
