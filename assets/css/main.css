@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer utilities {
+    .container-medium {
+        @apply mx-auto px-4 max-w-5xl;
+    }
+}
+
+@layer components {
+    .nav-link {
+        @apply text-green-600 font-bold underline;
+    }
+}

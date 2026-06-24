@@ -9,38 +9,40 @@
     </head>
     <body>
         <header>
-            <div>
-                <span>&gt;</span>
-                <span>Informalinx_</span>
+            <div class="container-medium flex justify-between gap-x-4 py-4 border-gray-300 border-b-1">
+                <div class="text-green-600 font-bold">
+                    <span>&gt;</span>
+                    <span>Informalinx_</span>
+                </div>
+                <nav>
+                    <ul class="flex gap-x-4">
+                        <li>
+                            <a href="" class="nav-link">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Projets</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Services</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="">Projets</a>
-                    </li>
-                    <li>
-                        <a href="">Services</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
         <main>{% block main %}{% endblock %}</main>
 
         <footer>
-            <nav>
-                <ul>
+            <nav class="container-medium py-4 border-gray-300 border-t-1">
+                <ul class="flex justify-center gap-x-4">
                     <li>
-                        <a href="">Politique de confidentialité</a>
+                        <a href="" class="nav-link">Politique de confidentialité</a>
                     </li>
                     <li>
-                        <a href="">Mentions légales</a>
+                        <a href="" class="nav-link">Mentions légales</a>
                     </li>
                     <li>
-                        <a href="">Conditions d'utilisation</a>
+                        <a href="" class="nav-link">Conditions d'utilisation</a>
                     </li>
                 </ul>
             </nav>
