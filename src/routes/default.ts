@@ -3,7 +3,7 @@ import Express from "express";
 const router = Express.Router();
 
 router.get("/", (_req, res) => {
-    res.send("Hello, World !");
+    res.render("home.njk");
 });
 
-export default router;
+export const defaultRouter = router;
