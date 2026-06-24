@@ -1,0 +1,31 @@
+{
+    "file_types": {
+        "HTML": ["*.html", ".njk"],
+    },
+    "lsp": {
+        "vscode-html-language-server": {
+            "settings": {
+                "html": {
+                    "format": {
+                        "wrapLineLength": 0,
+                        "unformatted": "",
+                        "contentUnformatted": "",
+                        "extraLiners": "",
+                        "preserveNewLines": true,
+                        "maxPreserveNewLines": 3,
+                        "indentInnerHtml": true,
+                        "wrapAttributes": "aligned-multiple",
+                        "wrapAttributesIndentSize": null,
+                        "templating": "django",
+                        "unformattedContentDelimiter": "pre",
+                    },
+                },
+            },
+        },
+    },
+    "languages": {
+        "HTML": {
+            "formatter": "language_server",
+        },
+    },
+}
