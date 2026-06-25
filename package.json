@@ -11,6 +11,7 @@
         "@types/node": "^26.0.0",
         "@types/nunjucks": "^3.2.6",
         "nodemon": "^3.1.14",
+        "sharp": "^0.35.2",
         "typescript": "^6.0.3"
     },
     "scripts": {
@@ -21,6 +22,7 @@
         "ts:watch:client": "npx tsc --watch --project tsconfig.client.json",
         "ts:watch:server": "npx tsc --watch --project tsconfig.server.json",
         "build": "npm run ts:compile:client && npm run ts:compile:server && npm run tailwind:compile",
-        "dev": "nodemon ./dist/server.js"
+        "dev": "nodemon ./dist/server.js",
+        "cli": "node ./dist/cli.js"
     }
 }
